@@ -7,10 +7,7 @@
 	"license": "ISC",
 	"type": "commonjs",
 	"description": "",
-	"files": [
-		"lib",
-		"types"
-	],
+	"files": ["lib", "types"],
 	"scripts": {
 		"build": "swc src -d lib",
 		"types": "tsc --emitDeclarationOnly",
@@ -20,7 +17,8 @@
 		"react": ">=18.0.0",
 		"react-dom": ">=18.0.0",
 		"react-native": ">=0.72.0",
-		"react-redux": ">=9.0.0"
+		"react-redux": ">=9.0.0",
+		"@reduxjs/toolkit": ">=2.0.0"
 	},
 	"devDependencies": {
 		"@reduxjs/toolkit": "^2.9.0",
