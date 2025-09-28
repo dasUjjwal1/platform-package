@@ -1,0 +1,37 @@
+{
+	"name": "platform-packages",
+	"version": "1.0.0",
+	"main": "index.js",
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"description": "",
+	"files": [
+		"lib",
+		"types"
+	],
+	"scripts": {
+		"build": "swc src -d lib",
+		"types": "tsc --emitDeclarationOnly",
+		"prepublishOnly": "npm run build && npm run types"
+	},
+	"peerDependencies": {
+		"react": ">=18.0.0",
+		"react-dom": ">=18.0.0",
+		"react-native": ">=0.72.0",
+		"react-redux": ">=9.0.0"
+	},
+	"devDependencies": {
+		"@reduxjs/toolkit": "^2.9.0",
+		"@swc/cli": "^0.7.8",
+		"@swc/core": "^1.13.5",
+		"@types/react": "^19.1.15",
+		"@types/react-dom": "^19.1.9",
+		"@types/react-native": "^0.72.8",
+		"react": "^19.1.1",
+		"react-dom": "^19.1.1",
+		"react-redux": "^9.2.0",
+		"typescript": "^5.9.2"
+	}
+}
